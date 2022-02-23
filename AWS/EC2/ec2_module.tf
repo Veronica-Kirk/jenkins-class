@@ -29,9 +29,9 @@ resource "aws_instance" "web" {
   }
 }
 
-output "ami" {
-  value = data.aws_ami.example.id
-}
+#output "ami" {
+ # value = data.aws_ami.example.id
+#}
 
 data "aws_subnet" "selected" {
   availability_zone = "us-east-1a"
